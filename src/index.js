@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import moment from 'moment';
 
 let testTweet = {
     message : "Array.map explained in 4 Levels of Difficulty by @yazeedBee is just amazing! Must read for new JavaScript devs. @yazeedBee Hats off to you and can't wait to read more of your blog posts.",
     avatar : "https://pbs.twimg.com/profile_images/1149381211006988288/FCE1yMEa.jpg",
     author : {
-        handle : "rajrajhans",
+        handle : "_rajrajhans",
         name : "Raj Rajhans"
     },
-    likes : 2,
-    retweets :  1,
     timestamp : "2018-07-21 21:24:37"
 };
 
@@ -23,11 +22,11 @@ class Tweet extends React.Component{
     render(){
         return(
             <div className="tweet">
-                <Avatar />
+                <Avatar link = {this.props.tweet.avatar}/>
                 <div className={"content"}>
-                    <NameWithHandle />
-                    <Time/>
-                    <Message />
+                    <NameWithHandle author = {this.props.tweet.author} />
+                    <Time timestamp = {this.props.tweet.timestamp}/>
+                    <Message content = {this.props.tweet.message}/>
 
 
                     <div className={"buttons"}>
@@ -45,7 +44,7 @@ class Tweet extends React.Component{
 class Avatar extends React.Component{
     render(){
         return(
-        <img src={"https://pbs.twimg.com/profile_images/1149381211006988288/FCE1yMEa.jpg"} alt="User Avatar" className="avatar" />
+        <img src={this.props.link} alt="User Avatar" className="avatar" />
         )
     }
 }
@@ -54,8 +53,8 @@ class NameWithHandle extends React.Component{
     render(){
         return(
             <span className={"name-with-handle"}>
-                <span className={"name"}> Raj Rajhans </span>
-                <span className={"handle"}> @rajrajhans </span>
+                <span className={"name"}> @{this.props.author.name} </span>
+                <span className={"handle"}> {this.props.author.handle} </span>
             </span>
         );
     }
@@ -65,7 +64,7 @@ class Message extends React.Component{
     render(){
         return(
             <div className={"message"}>
-                Array.map explained in 4 Levels of Difficulty by @yazeedBee is just amazing! Must read for new JavaScript devs. @yazeedBee Hats off to you and can't wait to read more of your blog posts.
+                {this.props.content}
             </div>
         )
     }
@@ -87,8 +86,11 @@ const ReplyButton = () => (
     <i className={"fa fa-reply reply-button"} />
 );
 
-const Time = () => (
-    <span className={"time"}> 3h ago </span>
-);
+const Time = (timestamp) => {
+    const timeString = moment(timestamp).fromNow();
+    return(
+        <span className={"time"}>{timeString}</span>
+    )
+};
 
 ReactDOM.render(<Tweet tweet={ testTweet }/>, document.getElementById('root')); //Renders the component to the window
