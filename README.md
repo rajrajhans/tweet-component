@@ -2,11 +2,15 @@
 
 This is a basic React Component to display a tweet. It is intended as a beginner project in learning ReactJS.
 
-_Put screenshot here_
+Here is an example of the component displaying a tweet -
+
+![screenshot](Image.png)
+
+
 
 ##Blog Post 
 
-To know more about this project, please read the blog post accompanying it -[Getting up and running with ReactJS](https://rajrajhans.com/).  
+To know more about this project, please read the blog post accompanying it - [Getting up and running with ReactJS](https://rajrajhans.com/).  
 
 ##Running the project
 
