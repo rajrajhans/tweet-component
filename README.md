@@ -1,4 +1,4 @@
-#React Component to display a Tweet
+# React Component to display a Tweet
 
 This is a basic React Component to display a tweet. It is intended as a beginner project in learning ReactJS.
 
@@ -8,11 +8,11 @@ Here is an example of the component displaying a tweet -
 
 
 
-##Blog Post 
+## Blog Post 
 
 To know more about this project, please read the blog post accompanying it - [Getting up and running with ReactJS](https://rajrajhans.com/).  
 
-##Running the project
+## Running the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
