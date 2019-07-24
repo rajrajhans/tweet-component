@@ -10,7 +10,7 @@ Here is an example of the component displaying a tweet -
 
 ## Blog Post 
 
-To know more about this project, please read the blog post accompanying it - [Getting up and running with ReactJS](https://rajrajhans.com/).  
+To know more about this project, please read the blog post accompanying it - [Getting up and running with ReactJS](https://rajrajhans.com/react-tweet-component/).  
 
 ## Running the project
 
