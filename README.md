@@ -14,6 +14,7 @@ To know more about this project, please read the blog post accompanying it - [Ge
 
 ## Enhancement
 The component shows only one tweet. We can use array.map() to display a list of tweets. This is implemented in the using-array.map branch. 
+
 ![](three.png)  
 
 ## Running the project
