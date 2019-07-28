@@ -12,6 +12,10 @@ Here is an example of the component displaying a tweet -
 
 To know more about this project, please read the blog post accompanying it - [Getting up and running with ReactJS](https://rajrajhans.com/react-tweet-component/).  
 
+## Enhancement
+The component shows only one tweet. We can use array.map() to display a list of tweets. This is implemented in the using-array.map branch. 
+![](three.png)  
+
 ## Running the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
