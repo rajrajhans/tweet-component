@@ -1,6 +1,6 @@
 # React Component to display a Tweet
 
-This is a basic React Component to display a tweet. It is intended as a beginner project in learning ReactJS. To know more about the development process and what I learned in this project, please see this supplementary [blog post](https://rajrajhans.com/react-tweet-component/)
+This is a basic React Component to display a tweet. It is intended as a beginner project in learning ReactJS. To know more about the development process and what I learned in this project, please see this supplementary [blog post](https://rajrajhans.com/react-js-guide/)
 
 Here is an example of the component displaying a tweet -
 
